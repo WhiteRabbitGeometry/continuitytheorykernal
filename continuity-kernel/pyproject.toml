@@ -1,0 +1,15 @@
+[project]
+name = "continuity-kernel"
+version = "0.1.0"
+description = "A lightweight continuity theory analysis kernel for humans, AI agents, and projects."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "WhiteRabbitGeometry"}]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["continuity_kernel*"]
+
+[tool.setuptools.package-data]
+continuity_kernel = ["theory.json", "prompt_pack.md"]
